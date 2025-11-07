@@ -11,6 +11,7 @@
         --text: #515959;
         --border: #59de0c;
     }
+
     .main {
         display: flow-root;
     }
@@ -21,14 +22,41 @@
         font-family: 'Inter', sans-serif;
         color: var(--text);
     }
+
     .card {
         max-width: 21em;
-        margin: 1rem; /* without scaling */
+        margin: 1rem;
+        /* without scaling */
         padding: 1em;
     }
 }
 
 @layer components {
-    /* todo components */
- 
+
+    .card__title {
+        font-size: 1.75em;
+        font-weight: bold;
+        color: var(--secondary);
+    }
+
+    .card__description {
+        font-size: 0.75em;
+    }
+
+.card__pricing {
+    font-size: 0.75em;
+}
+
+    .highlight {
+        font-weight: bold;
+    }
+
+    .highlight--primary {
+        color: var(--primary);
+    }
+
+    .highlight--large {
+        font-size: 1.5em;
+    }
+
 }

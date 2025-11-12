@@ -43,9 +43,9 @@
         font-size: 0.75em;
     }
 
-.card__pricing {
-    font-size: 0.75em;
-}
+    .card__pricing {
+        font-size: 0.75em;
+    }
 
     .highlight {
         font-weight: bold;
@@ -56,18 +56,39 @@
     }
 
     .highlight--large {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .button {
-        padding: 0.25em;
-        border-radius: 0.25em;
+        padding: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 0.5em;
+        display: block;
     }
 
     .button--primary {
+        font-weight: bold;
         color: whitesmoke;
         background-color: var(--primary);
-text-align: center;
+        text-align: center;
+        text-decoration: none;
     }
 
+    .list {
+        padding-left: 1.25rem;
+    }
+
+    .list__includes {
+        list-style-image: url(../images/check.svg);
+        padding: 0.5em;
+        font-size: 0.75em;
+    }
+
+
+    .list__doesntInclude {
+        list-style-image: url(../images/cross.svg);
+        padding: 0.5em;
+        font-size: 0.75em;
+    }
 }

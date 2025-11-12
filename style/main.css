@@ -9,7 +9,7 @@
         --secondary: #59bc1c;
         --denied: #ff8686;
         --text: #515959;
-        --border: #59de0c;
+        --border: #b8b8b8;
     }
 
     .main {
@@ -28,6 +28,8 @@
         margin: 1rem;
         /* without scaling */
         padding: 1em;
+        border: 0.1em solid var(--border);
+        border-radius: 1em;
     }
 }
 

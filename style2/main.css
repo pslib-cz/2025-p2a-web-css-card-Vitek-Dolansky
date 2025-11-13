@@ -1,0 +1,102 @@
+@layer reset, base, components;
+
+@import url('normalize.css') layer(reset);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap') layer(base);
+
+@layer reset {
+    :root {
+        --primary: #222931;
+        --secondary: #e8e8e8;
+        --denied: #ff8686;
+        --text: #283131;
+        --border: #e3e3e3;
+        --background: #c6c6c6;
+    }
+
+    .main {
+        display: flow-root;
+    }
+}
+
+@layer base {
+    html {
+        font-family: 'Inter', sans-serif;
+        color: var(--text);
+    }
+
+    .card {
+        max-width: 21em;
+        margin: 1rem;
+        /* without scaling */
+        padding: 1em;
+        border: 0.1em solid var(--border);
+        border-radius: 1em;
+    }
+}
+
+@layer components {
+
+    .card__title {
+        font-size: 1.75em;
+        font-weight: bold;
+        color: var(--secondary);
+        background-color: var(--primary);
+    }
+
+    .card__description {
+        font-size: 0.75em;
+        color: var(--secondary);
+    }
+
+    .card__table {
+background-color: var(--secondary);
+width: 100%;
+    }
+
+    .card__columns {
+        font-size: 1.5em;
+        font-weight: bold;
+        display: inline-block;
+        padding: 0.5em;
+        color: var(--text);
+        text-align: center;
+    }
+
+    .column__description {
+font-size: 0.75em;
+font-weight: lighter;
+display: block;
+    }
+
+    .button {
+        padding: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 0.5em;
+        display: block;
+    }
+
+    .button--primary {
+        font-weight: bold;
+        color: whitesmoke;
+        background-color: var(--primary);
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .list {
+        padding-left: 1.25rem;
+    }
+
+    .list__features {
+        padding: 1em;
+        list-style: none;
+        font-size: 0.75em;
+    }
+
+    .list__text {
+        padding: 0.5em;
+background-color: var(--background);
+border-radius: 0.5em;
+    }
+}

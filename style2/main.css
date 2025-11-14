@@ -37,14 +37,12 @@
 
     .card--marketer {
         background-color: var(--border);
-        padding: 0.2em;
+        overflow: hidden;
     }
 
     .card__header {
         background-color: var(--primary);
         padding: 1em;
-        border-top-left-radius: 1em;
-        border-top-right-radius: 1em;
 
     } 
     
